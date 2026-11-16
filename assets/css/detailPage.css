@@ -1,0 +1,56 @@
+main {
+    section {
+
+
+
+        h1 {
+            font-size: 20px;
+            color: blueviolet;
+
+
+        }
+
+        .container {
+            display: flex;
+            padding: 5px;
+            justify-content: space-around;
+
+            .left {
+
+
+                img {
+
+                    width: 600px;
+                    height: 500px;
+
+                }
+
+            }
+
+            .right {
+                gap: 20px;
+
+                p {
+                    font-size: 40px;
+                    margin: 20px 0;
+
+                }
+
+                button {
+
+                    width: 150px;
+                    padding: 10px;
+
+
+                }
+
+            }
+        }
+
+
+
+    }
+
+
+
+}

@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script defer src="./assets/js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <div class="logo">
+          <i class="fa-brands fa-pagelines"></i>
+          <h1>Fernwick</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="./assets/pages/addToCard.html">Add to card</a></li>
+            <li>
+              <a href="./assets/pages/addToWishlist.html">Add to wishlist</a>
+            </li>
+            <li><a href="./assets/pages/search.html">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+      <form action="">
+        <input
+          id="searchInput"
+          placeholder="Search plants..."
+          type="text"
+          required
+        />
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-trash"></i>
+      </form>
+    </header>
+
+    <main>
+      <div class="one">
+        <div class="container">
+          <div class="images">
+            <div class="image-boxs">
+              <img
+                src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=340&q=72&auto=format&fit=crop"
+                alt=""
+              />
+              <div class="name">
+                <span id="title">Succulents</span>
+                <span>24</span>
+              </div>
+            </div>
+            <div class="image-boxs">
+              <img
+                src="https://images.unsplash.com/photo-1545241047-6083a3684587?w=340&q=72&auto=format&fit=crop"
+                alt=""
+              />
+              <div class="name">
+                <span id="title">Statement</span>
+                <span>18</span>
+              </div>
+            </div>
+            <div class="image-boxs">
+              <img
+                src="https://images.unsplash.com/photo-1602923668104-8f9e03e77e62?w=340&q=72&auto=format&fit=crop"
+                alt=""
+              />
+              <div class="name">
+                <span id="title">Low light</span>
+                <span>31</span>
+              </div>
+            </div>
+            <div class="image-boxs">
+              <img
+                src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=340&q=72&auto=format&fit=crop"
+                alt=""
+              />
+              <div class="name">
+                <span id="title">Bonsai</span>
+                <span>9</span>
+              </div>
+            </div>
+            <div class="image-boxs">
+              <img
+                src="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=340&q=72&auto=format&fit=crop"
+                alt=""
+              />
+              <div class="name">
+                <span id="title">Cut stems</span>
+                <span>12</span>
+              </div>
+            </div>
+            <div class="image-boxs">
+              <img
+                src="https://images.unsplash.com/photo-1459156212016-c812468e2115?w=340&q=72&auto=format&fit=crop"
+                alt=""
+              />
+              <div class="name">
+                <span id="title">Gift sets</span>
+                <span>7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="second">
+        <div class="container">
+          <div class="head">
+            <span>POTTED THIS WEEK</span>
+            <h2>Fresh from the polytunnel</h2>
+            <p>
+              Everything below was potted on in the last seven days and is ready
+              to travel.
+            </p>
+          </div>
+          <div id="boxSec" class="boxs"></div>
+          <div class="more">
+            <button onclick="getPagination()">more product</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="container">
+          <div class="left">
+            <span>THE FERNWICK PROMISE</span>
+
+            <h3>We grow what we sell, and we say when it's difficult</h3>
+
+            <p>
+              Every plant here is raised at our own nursery in the Lea Valley —
+              no drop-shipping, no mystery imports. Each listing tells you
+              plainly how much light it needs, how often it drinks, and whether
+              it will survive a forgetful fortnight.
+            </p>
+
+            <div class="buttons">
+              <a href="#" class="btn visit">Visit the nursery</a>
+              <a href="#" class="btn guides">Read the care guides</a>
+            </div>
+          </div>
+
+          <div class="right">
+            <img
+              src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=900&q=72&auto=format&fit=crop"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="four">
+        <div class="container">
+          <span class="subtitle">HARD TO KILL</span>
+          <h3 class="title">Good for a first plant</h3>
+          <span class="description"
+            >Forgiving species that tolerate a missed watering — or four.</span
+          >
+
+          <div class="new">
+            <div class="boxs">
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="https://images.unsplash.com/photo-1509937528035-ad76254b0356?w=700&q=72&auto=format&fit=crop"
+                    alt=""
+                  />
+                  <span class="badge">NEW IN</span>
+                </div>
+                <div class="box-details">
+                  <h4>Moon Cactus</h4>
+                  <p class="botanical-name">Gymnocalycium mihanovichii</p>
+                  <div class="care-info">
+                    <span>Bright direct</span>
+                    <span>Monthly</span>
+                  </div>
+                  <p class="price">£14.00</p>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="https://images.unsplash.com/photo-1483794344563-d27a8d18014e?w=700&q=72&auto=format&fit=crop"
+                    alt=""
+                  />
+                </div>
+                <div class="box-details">
+                  <h4>Echeveria in Concrete</h4>
+                  <p class="botanical-name">Echeveria elegans</p>
+                  <div class="care-info">
+                    <span>Bright direct</span>
+                    <span>Fortnightly</span>
+                  </div>
+                  <p class="price">£22.00</p>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="https://images.unsplash.com/photo-1567331711402-509c12c41959?w=700&q=72&auto=format&fit=crop"
+                    alt=""
+                  />
+                  <span class="badge sale">SALE</span>
+                </div>
+                <div class="box-details">
+                  <h4>Lucky Bamboo</h4>
+                  <p class="botanical-name">Dracaena sanderiana</p>
+                  <div class="care-info">
+                    <span>Low light</span>
+                    <span>Weekly</span>
+                  </div>
+                  <p class="price">
+                    <span class="new-price">£16.00</span>
+                    <del class="old-price">£20.00</del>
+                  </p>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="img-box">
+                  <img
+                    src="https://images.unsplash.com/photo-1459156212016-c812468e2115?w=700&q=72&auto=format&fit=crop"
+                    alt=""
+                  />
+                </div>
+                <div class="box-details">
+                  <h4>Succulent Trio</h4>
+                  <p class="botanical-name">Mixed species</p>
+                  <div class="care-info">
+                    <span>Bright direct</span>
+                    <span>Fortnightly</span>
+                  </div>
+                  <p class="price">£26.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="five">
+        <div class="container">
+          <span>JOURNAL</span>
+          <h3>Care guides</h3>
+
+          <div class="new">
+            <div class="boxs">
+              <div class="box">
+                <img
+                  src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=72&auto=format&fit=crop"
+                  alt=""
+                />
+                <div class="box-details">
+                  <span>REPOTTING 6 MIN READ</span>
+                  <h4>How to tell when a plant has outgrown its pot</h4>
+                  <p>
+                    Roots at the drainage hole are the obvious sign. Three less
+                    obvious ones matter more.
+                  </p>
+                </div>
+              </div>
+
+              <div class="box">
+                <img
+                  src="https://images.unsplash.com/photo-1521334884684-d80222895322?w=700&q=72&auto=format&fit=crop"
+                  alt=""
+                />
+                <div class="box-details">
+                  <span>LIGHT 4 MIN READ</span>
+                  <h4>Reading the light in your own rooms</h4>
+                  <p>
+                    "Bright indirect" means nothing until you have measured it.
+                    Here is how, with a phone.
+                  </p>
+                </div>
+              </div>
+
+              <div class="box">
+                <img
+                  src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?w=700&q=72&auto=format&fit=crop"
+                  alt=""
+                />
+                <div class="box-details">
+                  <span>WATERING 5 MIN READ</span>
+                  <h4>Almost every houseplant dies of kindness</h4>
+                  <p>
+                    Overwatering outnumbers every other cause we see. The finger
+                    test, properly done.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="six">
+        <div class="container">
+          <div class="icons">
+            <div id="boxSec" class="boxs">
+              <div class="box">
+                <div class="icon-box">
+                  <i class="fa-solid fa-car-side"></i>
+                </div>
+                <div class="box-details">
+                  <h4>Free delivery over £40</h4>
+                  <p>Packed in recycled card, dispatched Tuesday to Friday.</p>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="icon-box">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="box-details">
+                  <h4>30-day plant guarantee</h4>
+                  <p>
+                    If it fails in the first month we replace it, no photographs
+                    required.
+                  </p>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="icon-box">
+                  <i class="fa-solid fa-seedling"></i>
+                </div>
+                <div class="box-details">
+                  <h4>Grown, not imported</h4>
+                  <p>Raised at our nursery, peat-free, in recycled pots.</p>
+                </div>
+              </div>
+
+              <div class="box">
+                <div class="icon-box">
+                  <i class="fa-regular fa-message"></i>
+                </div>
+                <div class="box-details">
+                  <h4>Ask us anything</h4>
+                  <p>
+                    A grower answers, usually the same day. Photographs welcome.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div class="brand-box">
+            <h3><i class="fa-solid fa-seedling"></i> Fernwick</h3>
+            <p>
+              A small nursery in the Lea Valley. We grow what we sell, and we
+              tell you honestly how hard it is to keep alive.
+            </p>
+            <form>
+              <input type="email" placeholder="Email address" />
+              <button type="submit">Join</button>
+            </form>
+          </div>
+
+          <div class="links-box">
+            <div class="column">
+              <h4>Shop</h4>
+              <ul>
+                <li><a href="#">All plants</a></li>
+                <li><a href="#">Easy care</a></li>
+                <li><a href="#">Pet safe</a></li>
+                <li><a href="#">Low light</a></li>
+                <li><a href="#">Sale</a></li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <h4>Help</h4>
+              <ul>
+                <li><a href="#">Care guides</a></li>
+                <li><a href="#">Watering advice</a></li>
+                <li><a href="#">Delivery & returns</a></li>
+                <li><a href="#">Plant guarantee</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <h4>Nursery</h4>
+              <ul>
+                <li><a href="#">Our story</a></li>
+                <li><a href="#">Visit us</a></li>
+                <li><a href="#">Wholesale</a></li>
+                <li><a href="#">Sustainability</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 FERNWICK NURSERY — LEA VALLEY, LONDON</span>
+          <span>A FREE TEMPLATE FROM <strong>HTML.DESIGN</strong></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/search.css">
+    <link rel="stylesheet" href="../../assets/css/addToCard.css">
+    <link rel="stylesheet" href="../../assets/css/addToWishlist.css">
+    
+    <script defer src="../../assets/js/search.js"></script>
+    
+</head>
+<body>
+     <header>
+      <div class="title">
+        <div class="logo">
+          <i class="fa-brands fa-pagelines"></i>
+          <h1>Fernwick</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../../main.html">Home</a></li>
+            <li><a href="./assets/pages/addToCard.html">Add to card</a></li>
+            <li><a href="./assets/pages/addToWish.html">Add to wishlist</a></li>
+            <li><a href="../../main.html">Search</a></li>
+          </ul>
+        </nav>
+      </div>
+      <form action="">
+        <input
+          id="searchInput"
+          placeholder="Search plants..."
+          type="text"
+          required
+        />
+                <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-trash"></i>
+      </form>
+    </header>
+ <main>
+      <section>
+        <div class="container">
+          <form action="">
+            <input id="searchInput" placeholder="Search..." type="text" required />
+            <button>search</button>
+          </form>
+          <div class="filter">
+            <button id="expensivetoCheap">Bahalidan ucuza</button>
+            <button id="cheaptoExp">Ucuzdan bahaliya</button>
+            <button id="abc">A-z</button>
+            <button id="cba">Z-a</button>
+          </div>
+          <div id="products">
+           
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+</body>
+</html>

@@ -4,9 +4,9 @@ main {
 
 
         h1 {
-            font-size: 20px;
+            font-size: 30px;
             color: blueviolet;
-
+padding: 10px;
 
         }
 
@@ -14,13 +14,13 @@ main {
             display: flex;
             padding: 5px;
             justify-content: space-around;
-
+gap: 30px;
             .left {
 
 
                 img {
 
-                    width: 600px;
+                    width: 500px;
                     height: 500px;
 
                 }
@@ -29,9 +29,9 @@ main {
 
             .right {
                 gap: 20px;
-
+width: 50%;
                 p {
-                    font-size: 40px;
+                    font-size: 30px;
                     margin: 20px 0;
 
                 }
@@ -40,7 +40,8 @@ main {
 
                     width: 150px;
                     padding: 10px;
-
+font-size: 20px;
+border-radius:1px solid black ;
 
                 }
 
